@@ -1,0 +1,13 @@
+name: my first workflow
+
+on: push 
+
+jobs:
+    first-jobs:
+        runs-on: ubunto-latest
+        steps:
+            - name: print msg
+              run: echo "my first workflows"
+
+            - name: list files
+              run : ls
